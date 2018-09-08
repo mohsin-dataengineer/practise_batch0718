@@ -1,0 +1,14 @@
+DROP TABLE IF EXISTS batch_0718.employee_managed;
+
+CREATE TABLE IF NOT EXISTS batch_0718.employee_managed ( 
+EID int comment 'Employee id',
+NAME String,
+SALARY String, 
+DESTINATION String
+)
+COMMENT 'Employee details'
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY '\t'
+LINES TERMINATED BY '\n'
+STORED AS TEXTFILE
+;
